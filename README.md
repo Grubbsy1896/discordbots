@@ -16,3 +16,8 @@ to get channel ids, enable developer mode on discord and right click, and graph 
 - fill in the quotes with the name of the holiday.
 
 ![alt text](http://dopplergaming.com/pictures/screen2.png)
+
+
+Credits:
+- discord.py https://github.com/Rapptz/discord.py
+- asyncio https://github.com/python/asyncio/tree/master
