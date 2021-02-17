@@ -3,6 +3,7 @@
 import datetime
 
 # General Settings
+# set announcement_channel to 0 to disable the announcements.
 settings = {
     "Token": "bot_token",
     "Prefix": "c!",
