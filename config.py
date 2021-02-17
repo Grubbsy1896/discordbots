@@ -10,6 +10,10 @@ settings = {
     "announcement_channel": 0
 }
 
+# Websites used for thse days:
+# https://nationaldaycalendar.com/march/
+# There are 2 more that I forgot to credit.
+
 # Holidays
 holidays = {
     "January": {
@@ -86,20 +90,20 @@ holidays = {
         '7': 'National Cereal Day', 
         '8': "International Women's Day", 
         '9': "Panic Day and Get Over It Day",
-        '10': '', 
-        '11': '', 
-        '12': '', 
-        '13': '', 
+        '10': 'Mario Day', 
+        '11': 'National Johnny Appleseed Day', 
+        '12': 'National Plant A Flower Day', 
+        '13': 'National K9 Veterans Day', 
         '14': 'Pi Day', 
-        '15': '', 
-        '16': '', 
+        '15': 'National Kansas Day', 
+        '16': 'Everything You Do Is Right Day', 
         '17': "St. Patrick's Day", 
-        '18': '', 
-        '19': '', 
-        '20': '', 
-        '21': '', 
-        '22': '', 
-        '23': '', 
+        '18': 'National Sloppy Joe Day', 
+        '19': 'National Chocolate Caramel Day', 
+        '20': 'World Flour Day', 
+        '21': 'World Down Syndrome Day', 
+        '22': 'National Goof Off Day', 
+        '23': 'National Near Miss Day', 
         '24': '', 
         '25': '', 
         '26': '', 
