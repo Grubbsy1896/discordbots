@@ -3,16 +3,14 @@
 import datetime
 
 # General Settings
-# set announcement_channel to 0 to disable the announcements
 settings = {
-    "Token": "bot_token",
+    "Token": "bot_token_goes_here",
     "Prefix": "c!",
-    "announcement_channel": 0
+    "announcement_channels": [ # So you can add more than 1 channel to announce in! 
+        "0",
+        "0"
+    ]
 }
-
-# Websites used for thse days:
-# https://nationaldaycalendar.com/march/
-# There are 2 more that I forgot to credit.
 
 # Holidays
 holidays = {
@@ -408,5 +406,6 @@ holidays = {
         '31': "New Year's Eve"
     }
 }
+
 
 
