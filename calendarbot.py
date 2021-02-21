@@ -3,6 +3,7 @@
 # This is the first time in a year I've used this format lol
 # Author: Grubbsy
 # Date: 2/15/2021
+# Updated: 2/20/2021
 # ----------------------------
 
 #||Imports||
@@ -41,10 +42,13 @@ async def on_ready():
 '''Command for seeing the holidays'''
 @client.command()
 async def holiday(ctx, month=datetime.datetime.now().strftime("%B"), day=datetime.datetime.now().strftime("%d")):
+    global monthList
     if str(month).isnumeric():
-        await ctx.send("I plan to fix it so you can use numbers for the month.")
+        month = num2month(month)
     elif str(day).isnumeric() != True:
         await ctx.send("Please Enter a Number for the day!")
+    if month not in monthList:
+        month = short2long(month)
 
     try:
         holiday = holidays[str(month)][str(day)]
@@ -78,10 +82,12 @@ async def forceannounce(ctx):
         await client.change_presence(status=discord.Status.online, activity=discord.Game(f"Happy {holiday}"), afk=False)
 
         # If an announcement channel exists and is defined, this will only happen if it's a holiday
-        if str(settings['announcement_channel']) != str(0):
-            channel = client.get_channel(int(settings['announcement_channel']))
-            announcementbed = discord.Embed(title=f"{month} {day}", description=f"Happy {holiday}", colour=discord.Color.from_rgb(randint(0, 255),randint(0, 255),randint(0, 255)))
-            await channel.send(embed=announcementbed)
+        if len(settings['announcement_channels']) > 0:
+            if holiday != '':
+                for channel in list(settings['announcement_channels']):
+                    channel = client.get_channel(int(channel))
+                    announcementbed = discord.Embed(title=f"{month} {day}", description=f"Happy {holiday}", colour=discord.Color.from_rgb(randint(0, 255),randint(0, 255),randint(0, 255)))
+                    await channel.send(embed=announcementbed)
         else:
             await ctx.send("Cannot announce because there is no channel defined in config.py")
     else:
@@ -100,10 +106,42 @@ async def refresh_holiday():
     holiday = holidays[str(month)][str(day)]
 
     await client.change_presence(status=discord.Status.online, activity=discord.Game(f"Happy {holiday}"), afk=False)
-    if now.hour == 1 and str(settings['announcement_channel']) != str(0):
+    if now.hour == 1 and len(settings['announcement_channels']) > 0:
         if holiday != '':
-            channel = client.get_channel(int(settings['announcement_channel']))
-            announcementbed = discord.Embed(title=f"{month} {day}", description=f"Happy {holiday}", colour=discord.Color.from_rgb(randint(0, 255),randint(0, 255),randint(0, 255)))
-            await channel.send(embed=announcementbed)
+                for channel in list(settings['announcement_channels']):
+                    channel = client.get_channel(int(channel))
+                    announcementbed = discord.Embed(title=f"{month} {day}", description=f"Happy {holiday}", colour=discord.Color.from_rgb(randint(0, 255),randint(0, 255),randint(0, 255)))
+                    await channel.send(embed=announcementbed)
+
+
+global monthList
+monthList = [
+    "January", # 1
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December" # 12
+]
+
+
+def num2month(num):
+    global monthList
+    return monthList[int(num)-1]
+
+def short2long(string): # this function is a godsend 
+    global monthList
+    for month in monthList:
+        if month.lower().startswith(string.lower()) or month.lower().endswith(string.lower()):
+            return month
+
+
+
 
 client.run(token)
