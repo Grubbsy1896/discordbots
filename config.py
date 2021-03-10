@@ -11,6 +11,10 @@ settings = {
         "0"
     ]
 }
+# Sources
+# https://nationaltoday.com/may-holidays/
+# https://nationaldaycalendar.com/may/
+
 
 # Holidays
 holidays = {
@@ -151,18 +155,18 @@ holidays = {
         '04': 'National Star Wars Day', 
         '05': 'Cinco De Mayo', 
         '06': 'National Beverage Day',
-        '07': '', 
+        '07': 'World Password Day', 
         '08': 'National Have a Coke Day', 
-        '09': '',
-        '10': '', 
-        '11': '', 
-        '12': '', 
-        '13': '', 
-        '14': '', 
-        '15': '', 
-        '16': '', 
-        '17': '', 
-        '18': '', 
+        '09': 'National Lost Sock Memorial Day',
+        '10': 'Whacking Day (The Simpsons)', 
+        '11': 'National Twilight Zone Day', 
+        '12': '	National Limerick Day', 
+        '13': 'National Frog Jumping Day', 
+        '14': 'National Dance Like a Chicken Day', 
+        '15': 'National Chocolate Chip Day', 
+        '16': 'National Sea Monkey Day', 
+        '17': 'National Idaho Day', 
+        '18': 'National Visit Your Relatives Day', 
         '19': '', 
         '20': '', 
         '21': '', 
