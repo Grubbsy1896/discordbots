@@ -132,7 +132,7 @@ def do_data():  # THIS FUNCTION IS RESPONSIBLE FOR CONVERTING RETRIEVED DATA INT
     return data
 
 def getData():  # THIS FUNCTION IS RESPONSIBLE FOR RETRIEVING DATA
-    url = "http://rezzo.dev/visualscores/print.php"
+    url = "https://rezzo.dev/highscores/json_print.php"
     response = requests.get(url) 
     s = response.text
     json_acceptable_string = s.replace("'", "\"")
