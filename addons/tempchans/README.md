@@ -1,0 +1,13 @@
+# Tempchans
+temp chans is a discord bot cog aimed towards letting users make temporary voice channels to fit a need, when there are no channels available.
+
+## NOTE
+This cog was made public under the pretense of providing example code to go off of. By no means is it perfect.
+See the readme in the root folder for more details.
+
+## Features
+
+- channels can be created with a command (while the user is in a voice channel)
+- channels are deleted once everyone in the temporary channel leaves.
+- channels can be edited by the person who made them, or the next in line person.
+- channels can be given custom names, be locked, and have a user cap.
