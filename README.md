@@ -13,6 +13,9 @@ A more useful bot I've created. If you use the code from there as is, I do belie
 
 (you will need to provide your own twitch api keys)
 
+### Mc Status Bot
+a minecraft server status bot, that gets a minecraft server's status and relevant information.
+
 ## Addons/Cogs
 These are cogs I've created to be a little more plug and play with the discord bots I've created. 
 
@@ -21,3 +24,8 @@ Tempchans is a cog I made to provide more teamspeak esque temporary voice channe
 I use this in a discord server I host and it's become a staple and a must have, as many different groups of people talk in there, and making admins is a hastle.
 
 This cog is mostly example code as well as a plug and play cog. 
+
+# FAQ
+
+## Why configuration.py?
+I Use a config.py file to put relevant info into because it is easy to import in python, setting a variable to a basic string, and then importing it into the main file. (I am unsure wether or not it's bad to do this, but it is rather hard-codey)
