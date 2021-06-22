@@ -3,6 +3,8 @@ The main reason for this code is for examples and allowing others to re-use my c
 
 See something you made? provide proof and I'll be sure to credit you.
 
+Questions? Concerns? Contact me at Grubbsy#1775 on discord.
+
 ## Full discord bot projects
 
 ### Holiday calendar bot.
