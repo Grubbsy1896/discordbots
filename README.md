@@ -18,6 +18,9 @@ A more useful bot I've created. If you use the code from there as is, I do belie
 ### Mc Status Bot
 a minecraft server status bot, that gets a minecraft server's status and relevant information.
 
+### RoleMenu bot
+a discord bot that uses dislash.py to include a discord.py rolemenu bot using the selectmenu message component.
+
 ## Addons/Cogs
 These are cogs I've created to be a little more plug and play with the discord bots I've created. 
 
