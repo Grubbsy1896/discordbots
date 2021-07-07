@@ -26,12 +26,14 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 # > Functions
 # ------------
 
+# This function takes a path string to then open a json file with that path. rather simple function.
 def open_json(path):
     if os.path.exists(path) != True:
         return False
     with open(path, 'r') as datafile:
         return json.load(datafile)
 
+# This function takes a path and a dictionary to dump into a json file.
 def save_json(path, data):
     if os.path.exists(path) != True:
         return False
