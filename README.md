@@ -1,4 +1,4 @@
-# This is a repository for all my discord bot projects. (Made in discord.py)
+# This is a repository for all my open source discord bot projects. (Made in discord.py)
 The main reason for this code is for examples and allowing others to re-use my code.
 
 See something you made? provide proof and I'll be sure to credit you.
